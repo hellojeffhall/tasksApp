@@ -11,7 +11,7 @@ class CheckForCompleted extends React.Component {
 class TaskTextArea extends React.Component {
   render() {
     return (
-      <div>{this.props.taskTitle}</div>
+      <div className="taskTextArea">{this.props.taskTitle}</div>
     )
   }
 }
@@ -66,7 +66,7 @@ var tasksArray = [
     isCompleted : ""
   }, 
   {
-    taskTitle   : "Repeat",
+    taskTitle   : "Go to the store",
     isCompleted : ""
   }
 ];

@@ -1,18 +1,30 @@
 <!doctype html>
 <html>
 <head>
-
+<meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <script src="https://fb.me/react-15.1.0.js"></script>
   <script src="https://fb.me/react-dom-15.1.0.js"></script> 
   <style>
+    .taskTextArea {
+      font-size : 3rem ;
+      white-space: pre-wrap ;
+    }
     .taskRow {
       display : flex ;
       flex-direction: row;
       justify-content: space-between ;
+      align-items: center;
+      min-height: 7rem ;
+    }
+    .taskRow input {
+      height : 6rem ;
+      width : 6rem ;
     }
     .delete_button {
       color : red ;
       transform: scaleY(.5);
+      transform: scaleX(2);
     }
   </style>
 </head>
